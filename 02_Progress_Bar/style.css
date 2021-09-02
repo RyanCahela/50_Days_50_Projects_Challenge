@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+span {
+  display: inline-block;
+  border-radius: 50%;
+  border: 3px solid grey;
+  padding: 1rem;
+  background-color: white;
+}
+
+.progress-bar {
+  position: relative;
+  z-index: 10;
+  width: 500px;
+  height: 53px;
+}
+
+.steps {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.bars {
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.bar {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -10;
+}
+
+.grey-bar {
+  background-color: grey;
+  z-index: -10;
+}
+
+.color-bar {
+  background-color: steelblue;
+  z-index: -1;
+}
+
+.step-1 {
+  transform: translateX(-75%);
+}
